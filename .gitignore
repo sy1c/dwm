@@ -1,5 +1,7 @@
-drw.o
-dwm
-dwm.o
-util.o
-config.h
+dwm/config.h
+dwm/drw.o
+dwm/dwm
+dwm/dwm.o
+dwm/util.o
+dwmblocks/blocks.h
+dwmblocks/dwmblocks
