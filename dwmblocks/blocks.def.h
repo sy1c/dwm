@@ -1,7 +1,9 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"", " date '+  %F %I:%M%p ' ",					5,		0},
+	
+    {" ", " battery", 5, 0},
+    {" ", " date '+%F %I:%M%p '", 60, 0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
