@@ -65,8 +65,9 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *audiovolupcmd[] = { "amixer", "set", "Master", "5%+", "unmute", NULL };
 static const char *audiovoldowncmd[] = { "amixer", "set", "Master", "5%-", "unmute", NULL };
 static const char *audiomutecmd[] = { "amixer", "set", "Master", "toggle", NULL };
-static const char *monbrightnessup[] = { "xbacklight", "-inc", "20", NULL};
-static const char *monbrightnessdown[] = { "xbacklight", "-dec", "20", NULL};
+static const char *monbrightnessup[] = { "xbacklight", "-inc", "20", NULL };
+static const char *monbrightnessdown[] = { "xbacklight", "-dec", "20", NULL };
+static const char *printscreen[] = { "flameshot", "gui", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -104,6 +105,7 @@ static Key keys[] = {
     { 0,                            XF86XK_AudioMute, spawn, {.v = audiomutecmd } },
     { 0,                            XF86XK_MonBrightnessUp, spawn, {.v = monbrightnessup } },
     { 0,                            XF86XK_MonBrightnessDown, spawn, {.v = monbrightnessdown } },
+    { 0,                            XK_Print, spawn, {.v = printscreen } },
 };
 
 /* button definitions */
