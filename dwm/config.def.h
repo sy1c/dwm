@@ -9,7 +9,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "MesloLGM Nerd Font:size=10" };
-static const char dmenufont[]       = "MesloLGM Nerd Font Mono:size=10";
+static const char dmenufont[]       = "MesloLGM Nerd Font:size=10";
 static const char col_white[]       = "#eceff4";
 static const char col_black[]       = "#2e3440";
 static const char col_gray[]        = "#4c566a";
@@ -41,8 +41,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ " 﩯 ",      tile },    /* first entry is default */
-	{ "  ",      NULL },    /* no layout function means floating behavior */
-	{ "  ",      monocle },
+	{ " 舘 ",      NULL },    /* no layout function means floating behavior */
+	{ " 﩮 ",      monocle },
 };
 
 /* key definitions */
